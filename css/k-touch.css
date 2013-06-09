@@ -1,0 +1,16 @@
+/* RESET */
+html, body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, fieldset, form, input, textarea {
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+ul {
+	clear: both; float: none;
+}
+canvas {
+    /* intrinsic dimensions specified as canvas attributes: 449px x 245px */
+	display: none;
+    position: relative;
+    left: -250px;
+}
