@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="k-touch : Providing the Konami code on touch devices." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>k-touch</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/davidcmoulton/k-touch">View on GitHub</a>
+
+          <h1 id="project_title">k-touch</h1>
+          <h2 id="project_tagline">Providing the Konami code on touch devices.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/davidcmoulton/k-touch/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/davidcmoulton/k-touch/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="k-touch" class="anchor" href="#k-touch"><span class="octicon octicon-link"></span></a>k-touch</h1>
+
+<p>Not content with a traditional Konami-code-activated easter egg on your site?</p>
+
+<p>Troubled that touch screen users are locked out of such geek essentials?</p>
+
+<p>Then your worries are over: here is some <strong><em>touch-enabled Konami code action</em></strong>!</p>
+
+<h2>
+<a name="what-it-does" class="anchor" href="#what-it-does"><span class="octicon octicon-link"></span></a>What it does</h2>
+
+<p>konami-touch provides touch-screen-actuated Konami code driven functionality, <strong><em>and</em></strong> additionally throws in the traditional keyboard-entered Konami code mechanism for extra fun.</p>
+
+<p>This implementation plays audio using html5 audio.</p>
+
+<p>If you're using it on a touch device, it also uses canvas.</p>
+
+<h2>
+<a name="how-to-use-it" class="anchor" href="#how-to-use-it"><span class="octicon octicon-link"></span></a>How to use it</h2>
+
+<ol>
+<li><p>Copy the js, css and assets directories to your site;</p></li>
+<li><p>include a reference to k-code.js and k-code.css in your html file (see demo.html for an example);</p></li>
+<li>
+<p>then either:</p>
+
+<p>a. load your page in a desktop browser and enter the Konami code, or:</p>
+
+<p>b. load your page on a touch-enabled device, and begin to swipe the Konami code. You should be given the facility to enter B and A at the right moment, assuming you've got it right up to that point.</p>
+</li>
+</ol><h2>
+<a name="where-does-it-work" class="anchor" href="#where-does-it-work"><span class="octicon octicon-link"></span></a>Where does it work?</h2>
+
+<p>This should work on all desktop browsers that support html5 audio.</p>
+
+<p>It has also been tested sucessfully on:</p>
+
+<ul>
+<li><p>Firefox on Android ICS &amp; Jellybean</p></li>
+<li><p>Opera mobile (webkit version) on Android ICS &amp; Jellybean</p></li>
+<li><p>Built in browser on Android ICS</p></li>
+<li><p>Dolphin browser on Android ICS &amp; Jellybean</p></li>
+<li><p>Safari on iPad iOS 6</p></li>
+</ul><h2>
+<a name="where-doesnt-it-work" class="anchor" href="#where-doesnt-it-work"><span class="octicon octicon-link"></span></a>Where doesn't it work?</h2>
+
+<p>This won't work on browsers that don't support html5 audio (and canvas touch events, for touch devices). Polyfilled IE 8 hasn't been tested, so you'll have to try it and see. </p>
+
+<p>This also doesn't currently work on Chrome on Android. The swipe guestures are received, but the touch event on the canvas B and A buttons isn't detected for reasons I haven't got to the bottom of yet.</p>
+
+<p>It won't work on proxy browsers (Opera Mini and Dolphin Mini).</p>
+
+<h2>
+<a name="notes" class="anchor" href="#notes"><span class="octicon octicon-link"></span></a>Notes</h2>
+
+<p>Currently this logs keycodes to the console, and records the swipe gestures and button presses received in-page within <code>div#debug</code>.</p>
+
+<p>It also uses <code>div#msg</code> to indicate if touch support has been detected.</p>
+
+<p>This could be improved by using some kind of formal logger, but that's not a priority. That said, if you want it to see it in, send me a pull request :-)</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">k-touch maintained by <a href="https://github.com/davidcmoulton">davidcmoulton</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
