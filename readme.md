@@ -55,4 +55,6 @@ It also uses <code>div#msg</code> to indicate if touch support has been detected
 
 This could be improved by using some kind of formal logger, but that's not a priority. That said, if you want it to see it in, send me a pull request :-)
 
+## Licence
+This work is available under the MIT licence: http://davidcmoulton.mit-license.org
 
