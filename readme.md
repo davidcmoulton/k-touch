@@ -48,4 +48,11 @@ This also doesn't currently work on Chrome on Android. The swipe guestures are r
 
 It won't work on proxy browsers (Opera Mini and Dolphin Mini).
 
+## Notes
+Currently this logs keycodes to the console, and records the swipe gestures and button presses received in-page within <code>div#debug</code>.
+
+It also uses <code>div#msg</code> to indicate if touch support has been detected.
+
+This could be improved by using some kind of formal logger, but that's not a priority. That said, if you want it to see it in, send me a pull request :-)
+
 
