@@ -6,7 +6,7 @@ Troubled that touch screen users are locked out of such geek essentials?
 Then your worries are over: here is some ***touch-enabled Konami code action!***
 
 ## What it does
-konami-touch provides touch-screen-actuated Konami code driven functionality, ***and*** additionally throws in the traditional keyboard-entered Konami code mechanism for extra fun.
+k-touch provides touch-screen-actuated Konami code driven functionality, ***and*** additionally throws in the traditional keyboard-entered Konami code mechanism for extra fun.
 
 This implentation plays audio using html5 audio.
 
@@ -55,7 +55,7 @@ Currently this logs keycodes to the console, and records the swipe gestures and 
 
 It also uses <code>div#msg</code> to indicate if touch support has been detected.
 
-This hasn't been tested on devices that support both touch and have a keyboard, so I'll be interested to see how it works on, say, a Chromebook pixel.
+This hasn't been tested on devices that support both touch and have a keyboard, so I'll be interested to see how it works on, say, a Chromebook Pixel.
 
 This could be improved by using some kind of formal logger, but that's not a priority. That said, if you want it to see it in, send me a pull request :-)
 
