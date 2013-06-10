@@ -3,66 +3,63 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+
     <title>k-touch by davidcmoulton</title>
   </head>
 
   <body>
-    <div id="container">
-      <div class="inner">
 
-        <header>
-          <h1>k-touch</h1>
-          <h2>Providing the Konami code on touch devices.</h2>
-        </header>
+    <header>
+      <div class="container">
+        <h1>k-touch</h1>
+        <h2>Providing the Konami code on touch devices.</h2>
 
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/davidcmoulton/k-touch/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/davidcmoulton/k-touch/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/davidcmoulton/k-touch" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        <section id="downloads">
+          <a href="https://github.com/davidcmoulton/k-touch/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/davidcmoulton/k-touch/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/davidcmoulton/k-touch" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
         </section>
+      </div>
+    </header>
 
-        <hr>
-
-        <section id="main_content">
-          <h1>
+    <div class="container">
+      <section id="main_content">
+        <h1>
 <a name="k-touch" class="anchor" href="#k-touch"><span class="octicon octicon-link"></span></a>k-touch</h1>
 
-<p>Not content with a traditional Konami-code-activated easter egg on your site?</p>
+<p>Not content with a traditional <a href="http://en.wikipedia.org/wiki/List_of_Konami_code_games">Konami-code</a>-activated easter egg on your site?</p>
 
 <p>Troubled that touch screen users are locked out of such geek essentials?</p>
 
-<p>Then your worries are over: here is some <strong><em>touch-enabled Konami code action</em></strong>!</p>
+<p>Then your worries are over: here is some <strong><em>touch-enabled Konami code action!</em></strong></p>
 
 <h2>
 <a name="what-it-does" class="anchor" href="#what-it-does"><span class="octicon octicon-link"></span></a>What it does</h2>
 
-<p>konami-touch provides touch-screen-actuated Konami code driven functionality, <strong><em>and</em></strong> additionally throws in the traditional keyboard-entered Konami code mechanism for extra fun.</p>
+<p>k-touch provides touch-screen-actuated Konami code driven functionality, <strong><em>and</em></strong> additionally throws in the traditional keyboard-entered Konami code mechanism for extra fun.</p>
 
 <p>This implentation plays audio using html5 audio.</p>
 
-<p>If you're using it on a touch device, it also uses canvas.</p>
+<p>If you're using it on a touch device, it also uses canvas. And touch events, obviously.</p>
 
 <h2>
 <a name="how-to-use-it" class="anchor" href="#how-to-use-it"><span class="octicon octicon-link"></span></a>How to use it</h2>
 
 <ol>
 <li><p>Copy the js, css and assets directories to your site;</p></li>
-<li><p>include a reference to k-code.js and k-code.css in your html file;</p></li>
+<li><p>include a reference to k-code.js and k-code.css in your html file (see demo.html for an example);</p></li>
 <li>
 <p>then either:</p>
 
 <p>a. load your page in a desktop browser and enter the Konami code, or:</p>
 
-<p>b. load your page on a touch-enabled device, and begin to swipe the Konami code. You should be given the facility to enter B and A at the right moment, assuming you've got it right up to that point.</p>
+<p>b. load your page on a touch-enabled device, and begin to swipe the Konami code (swipe up for up... you get the idea). You should be given the facility to enter B and A at the right moment, assuming you've got it right up to that point.</p>
 </li>
-</ol><p>See <a href="demo.html">this example</a>.</p>
+</ol><p>Try this <a href="http://davidcmoulton.github.io/k-touch/demo.html">live demo</a>. (It will be a blank page if touch isn't supported; it will say "touch supported" and echo the touch to the screen if touch is supported.)</p>
 
 <h2>
 <a name="where-does-it-work" class="anchor" href="#where-does-it-work"><span class="octicon octicon-link"></span></a>Where does it work?</h2>
@@ -82,9 +79,9 @@
 
 <p>This won't work on browsers that don't support html5 audio (and canvas touch events, for touch devices). Polyfilled IE 8 hasn't been tested, so you'll have to try it and see. </p>
 
-<p>This also doesn't currently work on Chrome on Android. The swipe guestures are received, but the touch event on the canvas B and A buttons isn't detected for reasons I haven't got to the bottom of yet.</p>
+<p>This also doesn't currently work on Chrome on Android. The swipe gestures are received, but the touch event on the canvas B and A buttons isn't detected for reasons I haven't got to the bottom of yet.</p>
 
-<p>It won't work on proxy browsers (Opera Mini and Dolphin Mini).</p>
+<p>It won't work on proxy browsers, like Opera Mini and Dolphin Mini.</p>
 
 <h2>
 <a name="notes" class="anchor" href="#notes"><span class="octicon octicon-link"></span></a>Notes</h2>
@@ -93,21 +90,17 @@
 
 <p>It also uses <code>div#msg</code> to indicate if touch support has been detected.</p>
 
+<p>This hasn't been tested on devices that support both touch and have a keyboard, so I'll be interested to see how it works on, say, a Chromebook Pixel.</p>
+
 <p>This could be improved by using some kind of formal logger, but that's not a priority. That said, if you want it to see it in, send me a pull request :-)</p>
 
 <h2>
 <a name="licence" class="anchor" href="#licence"><span class="octicon octicon-link"></span></a>Licence</h2>
 
 <p>This work is available under the MIT licence: <a href="http://davidcmoulton.mit-license.org">http://davidcmoulton.mit-license.org</a></p>
-        </section>
-
-        <footer>
-          k-touch is maintained by <a href="https://github.com/davidcmoulton">davidcmoulton</a><br>
-          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.
-        </footer>
-
-        
-      </div>
+      </section>
     </div>
+
+    
   </body>
 </html>
