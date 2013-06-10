@@ -6,7 +6,7 @@ Troubled that touch screen users are locked out of such geek essentials?
 Then your worries are over: here is some ***touch-enabled Konami code action!***
 
 ## What it does
-k-touch provides touch-screen-actuated Konami code driven functionality, ***and*** additionally throws in the traditional keyboard-entered Konami code mechanism for extra fun.
+k-touch provides touch-screen-actuated Konami-code-driven functionality, ***and*** throws in the traditional keyboard-entered Konami code mechanism for extra fun.
 
 This implentation plays audio using html5 audio.
 
