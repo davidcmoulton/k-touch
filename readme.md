@@ -40,7 +40,9 @@ It has also been tested sucessfully on:
 
 + Dolphin browser on Android ICS & Jellybean
 
-+ Safari on iPad iOS 6
++ Dolphin Mini on Android Gingerbread, ICS and Jellybean
+
++ Safari on iPad iOS 6  
 
 
 ## Where doesn't it work?
@@ -48,7 +50,8 @@ This won't work on browsers that don't support html5 audio (and canvas touch eve
 
 This also doesn't currently work on Chrome on Android. The swipe gestures are received, but the touch event on the canvas B and A buttons isn't detected for reasons I haven't got to the bottom of yet.
 
-It won't work on proxy browsers, like Opera Mini and Dolphin Mini.
+It doesn't work on Opera Mini (buth then you wouldn't really expect it to).
+
 
 ## Notes
 Currently this logs keycodes to the console, and records the swipe gestures and button presses received in-page within <code>div#debug</code>.
